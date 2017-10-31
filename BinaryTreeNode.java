@@ -1,43 +1,21 @@
-package BinaryTree;
 
- public class BinaryTreeNode{
-     
-     BinaryTreeNode left, right;
-     Object element;
- 
-     public BinaryTreeNode(){
-         left = null;
-         right = null;
-         element = null;
-     }
+package LinkedBinaryTree;
 
-     public BinaryTreeNode(Object n){
-         left = null;
-         right = null;
-         element = n;
-     }
-
-     public void setLeft(BinaryTreeNode n){
-         left = n;
-     }
-
-     public void setRight(BinaryTreeNode n){
-         right = n;
-     }
-
-     public BinaryTreeNode getLeft(){
-         return left;
-     }
-
-     public BinaryTreeNode getRight(){
-         return right;
-     }
-
-     public void setData(Object d){
-         element = d;
-     }
-
-     public Object getData(){
-         return element;
-     }     
- }
+public class BinaryTreeNode {
+    Object element;
+    BinaryTreeNode leftChild;
+    BinaryTreeNode rightChild;
+    
+    public BinaryTreeNode(){   
+    }
+    
+    public BinaryTreeNode(Object theElement){
+        element = theElement;
+    }
+    
+    public BinaryTreeNode(Object theElement, BinaryTreeNode theleftChild, BinaryTreeNode therightChild){
+        element = theElement;
+        leftChild = theleftChild;
+        rightChild = therightChild;
+    }
+}
